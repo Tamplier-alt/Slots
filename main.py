@@ -69,10 +69,10 @@ def update_bet():
         bet_label.config(text='Некорректная ставка')
 
 root = tk.Tk()
-root.title("🎰 Слоты")
+root.title("Слоты")
 root.configure(bg="#222")
 
-title_label = tk.Label(root, text="🎰 ДЭПАЛКА", font=('Arial Black', 32), fg="gold", bg="#222")
+title_label = tk.Label(root, text="ДЭПАЛКА", font=('Arial Black', 32), fg="gold", bg="#222")
 title_label.pack(pady=10)
 
 result_frame = tk.Frame(root, bg="#222")
@@ -86,10 +86,10 @@ message_label.pack(pady=5)
 info_frame = tk.Frame(root, bg="#222")
 info_frame.pack(pady=5)
 
-balance_label = tk.Label(info_frame, text=f'💰 Баланс: {balance[0]}', font=('Arial', 14), fg="white", bg="#222")
+balance_label = tk.Label(info_frame, text=f'Баланс: {balance[0]}', font=('Arial', 14), fg="white", bg="#222")
 balance_label.grid(row=0, column=0, padx=10)
 
-bet_label = tk.Label(info_frame, text=f'💵 Ставка: {bet_amount[0]}', font=('Arial', 14), fg="white", bg="#222")
+bet_label = tk.Label(info_frame, text=f'Ставка: {bet_amount[0]}', font=('Arial', 14), fg="white", bg="#222")
 bet_label.grid(row=0, column=1, padx=10)
 
 bet_entry = tk.Entry(info_frame, font=('Arial', 14), width=6, justify='center')
@@ -98,7 +98,7 @@ bet_entry.grid(row=0, column=2, padx=5)
 update_bet_button = tk.Button(info_frame, text='Обновить', font=('Arial', 12), command=update_bet, bg="#444", fg="white")
 update_bet_button.grid(row=0, column=3, padx=5)
 
-spin_button = tk.Button(root, text='🎮 Дэпнуть хату', font=('Arial', 20), command=play, bg="darkred", fg="white")
+spin_button = tk.Button(root, text='Дэпнуть хату', font=('Arial', 20), command=play, bg="darkred", fg="white")
 spin_button.pack(pady=10)
 
 log_frame = tk.Frame(root, bg="#222")
@@ -107,7 +107,7 @@ log_frame.pack(pady=10)
 left_log_frame = tk.Frame(log_frame, bg="#222")
 left_log_frame.pack(side='left', padx=10)
 
-log_label = tk.Label(left_log_frame, text='🎮 История спинов', font=('Arial', 12, 'bold'), fg="white", bg="#222")
+log_label = tk.Label(left_log_frame, text='История спинов', font=('Arial', 12, 'bold'), fg="white", bg="#222")
 log_label.pack()
 log_text = tk.Text(left_log_frame, height=10, width=40, font=('Arial', 12), state='disabled', bg="#111", fg="lightgray")
 log_text.pack()
@@ -115,7 +115,7 @@ log_text.pack()
 right_log_frame = tk.Frame(log_frame, bg="#222")
 right_log_frame.pack(side='right', padx=10)
 
-jackpot_log_label = tk.Label(right_log_frame, text='🏆 История джекпотов', font=('Arial', 12, 'bold'), fg="white", bg="#222")
+jackpot_log_label = tk.Label(right_log_frame, text='История джекпотов', font=('Arial', 12, 'bold'), fg="white", bg="#222")
 jackpot_log_label.pack()
 jackpot_log_text = tk.Text(right_log_frame, height=10, width=40, font=('Arial', 12), state='disabled', bg="#111", fg="lightgray")
 jackpot_log_text.pack()
@@ -123,7 +123,7 @@ jackpot_log_text.pack()
 jackpot_label = tk.Label(root, text='Попыток до джекпота: 0', font=('Arial', 14), fg="orange", bg="#222")
 jackpot_label.pack(pady=5)
 
-quit_button = tk.Button(root, text='🏦 Кнопка БАБЛО вывод', font=('Arial', 14), command=root.destroy, bg="#333", fg="white")
+quit_button = tk.Button(root, text='Кнопка БАБЛО вывод', font=('Arial', 14), command=root.destroy, bg="#333", fg="white")
 quit_button.pack(pady=10)
 
 root.mainloop()
